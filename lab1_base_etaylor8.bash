@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #OUTPUT="group4_matrix_base.txt"
-#OUTPUT="group4_gateway_base.txt"
+OUTPUT="group4_gateway_base.txt"
 #OUTPUT="group4_vm2_base.txt"
 #OUTPUT="group4_vm3_base.txt"
 #OUTPUT="group4_vm4_base.txt"
