@@ -1,0 +1,55 @@
+.
+├── .git
+│   ├── branches
+│   ├── config
+│   ├── description
+│   ├── HEAD
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── master
+│   │       └── remotes
+│   │           └── origin
+│   │               └── HEAD
+│   ├── objects
+│   │   ├── 2b
+│   │   │   └── cfbef36135820868e5f8a3db96aedf60dff7eb
+│   │   ├── 53
+│   │   │   └── 145f6262b176778f227a6ac94c9dc028f0fb59
+│   │   ├── 7d
+│   │   │   └── 6ebcc564aaed5178981fc8355607265786291f
+│   │   ├── 7f
+│   │   │   └── 5b57304f20ab131c3cf3f699357df3a7afe039
+│   │   ├── 82
+│   │   │   └── f51732afdbc9b73f6e107d7b5a6640a004883c
+│   │   ├── 88
+│   │   │   └── ed23344d03935e23b8efff91392b40d844f5bf
+│   │   ├── c7
+│   │   │   └── c6142acdf4947e1c544facecd26c569621c2d9
+│   │   ├── info
+│   │   └── pack
+│   ├── packed-refs
+│   └── refs
+│       ├── heads
+│       │   └── master
+│       ├── remotes
+│       │   └── origin
+│       │       └── HEAD
+│       └── tags
+└── README.md
+
+24 directories, 28 files

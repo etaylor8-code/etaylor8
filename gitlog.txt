@@ -1,0 +1,20 @@
+commit 2bcfbef36135820868e5f8a3db96aedf60dff7eb
+Merge: 88ed233 82f5173
+Author: etaylor8-code <71945805+etaylor8-code@users.noreply.github.com>
+Date:   Sat Sep 26 16:38:03 2020 -0400
+
+    Merge pull request #1 from etaylor8-code/readme-edits
+    
+    Add name and section
+
+commit 82f51732afdbc9b73f6e107d7b5a6640a004883c
+Author: etaylor8-code <71945805+etaylor8-code@users.noreply.github.com>
+Date:   Sat Sep 26 16:24:54 2020 -0400
+
+    Add name and section
+
+commit 88ed23344d03935e23b8efff91392b40d844f5bf
+Author: etaylor8-code <71945805+etaylor8-code@users.noreply.github.com>
+Date:   Sat Sep 26 16:17:48 2020 -0400
+
+    Initial commit
