@@ -1,0 +1,72 @@
+SPR500 Lab 3 Report
+
+Full Name: Evan Taylor
+User Name: etaylor8
+Student ID: 121994172
+Routing table for vm2:
+default via 172.17.255.1 dev ens192 proto dhcp metric 102 
+172.17.0.0/16 dev ens192 proto kernel scope link src 172.17.26.2 metric 102 
+192.168.26.0/24 dev ens224 proto kernel scope link src 192.168.26.2 metric 101 
+192.168.144.0/24 via 192.168.26.1 dev ens224 
+192.168.144.0/24 via 192.168.26.1 dev ens224 proto static metric 101 
+
+Http server running on port 80:
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled; vendor preset: disabled)
+   Active: active (running) since Sat 2020-10-10 19:17:47 EDT; 38min ago
+     Docs: man:httpd.service(8)
+ Main PID: 50666 (httpd)
+   Status: "Total requests: 4; Idle/Busy workers 100/0;Requests/sec: 0.00174; Bytes served/sec:   1 B/sec"
+    Tasks: 213 (limit: 11467)
+   Memory: 24.6M
+   CGroup: /system.slice/httpd.service
+           ├─50666 /usr/sbin/httpd -DFOREGROUND
+           ├─50669 /usr/sbin/httpd -DFOREGROUND
+           ├─50670 /usr/sbin/httpd -DFOREGROUND
+           ├─50671 /usr/sbin/httpd -DFOREGROUND
+           └─50672 /usr/sbin/httpd -DFOREGROUND
+
+Oct 10 19:17:47 evan-vm2.taylor systemd[1]: Stopped The Apache HTTP Server.
+Oct 10 19:17:47 evan-vm2.taylor systemd[1]: Starting The Apache HTTP Server...
+Oct 10 19:17:47 evan-vm2.taylor systemd[1]: Started The Apache HTTP Server.
+Oct 10 19:17:47 evan-vm2.taylor httpd[50666]: Server configured, listening on: port 80
+
+Size of log files:
+-rw-------. 1 root root      0 Oct  3 03:46 /var/log/boot.log
+-rw-rw----. 1 root utmp      0 Oct  1 03:35 /var/log/btmp
+-rw-r--r--. 1 root root 867856 Oct 10 19:03 /var/log/dnf.log
+-rw-rw-r--. 1 root utmp 292876 Oct 10 19:46 /var/log/lastlog
+-rw-------. 1 root root      0 Oct  4 03:28 /var/log/maillog
+-rw-------. 1 root root  63608 Oct 10 19:56 /var/log/secure
+-rw-rw-r--. 1 root utmp      0 Oct 10 19:34 /var/log/wtmp
+
+Number of active services on vm2:
+33
+
+Number of RPM packages installed on vm2
+478
+
+Current Firewall Rules
+Chain INPUT (policy ACCEPT 229 packets, 57455 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    5   300 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:80
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:443
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 40 packets, 7398 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+SELinux status
+SELinux status:                 enabled
+SELinuxfs mount:                /sys/fs/selinux
+SELinux root directory:         /etc/selinux
+Loaded policy name:             targeted
+Current mode:                   enforcing
+Mode from config file:          enforcing
+Policy MLS status:              enabled
+Policy deny_unknown status:     allowed
+Memory protection checking:     actual (secure)
+Max kernel policy version:      31
+
